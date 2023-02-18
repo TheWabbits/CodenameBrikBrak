@@ -14,6 +14,9 @@ class CODENAMEBRIKBRAK_API ABatPlayerController : public APlayerController
 public:
 	ABatPlayerController();
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void ScoreUpdated();
+
 protected:
 	virtual void BeginPlay();
 

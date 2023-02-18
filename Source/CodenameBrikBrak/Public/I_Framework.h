@@ -24,4 +24,7 @@ class CODENAMEBRIKBRAK_API II_Framework
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Ball)
 	void StartGame();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Ball)
+	void ScoreUpdate(int points);
 };
