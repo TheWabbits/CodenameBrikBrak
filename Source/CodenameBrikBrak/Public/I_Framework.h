@@ -4,11 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "I_Ball.generated.h"
+#include "I_Framework.generated.h"
 
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
-class UI_Ball : public UInterface
+class UI_Framework : public UInterface
 {
 	GENERATED_BODY()
 };
@@ -16,12 +16,12 @@ class UI_Ball : public UInterface
 /**
  * 
  */
-class CODENAMEBRIKBRAK_API II_Ball
+class CODENAMEBRIKBRAK_API II_Framework
 {
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Ball)
-	void BallImpact();
+	void StartGame();
 };

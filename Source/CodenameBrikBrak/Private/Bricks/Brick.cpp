@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright 2017-2022 Wabbit, LLC. All Rights Reserved.
 
 #include "CodenameBrikBrak/Public/Bricks/Brick.h"
 #include "Components/StaticMeshComponent.h"
