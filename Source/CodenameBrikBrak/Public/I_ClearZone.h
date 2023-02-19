@@ -4,11 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "I_Framework.generated.h"
+#include "I_ClearZone.generated.h"
 
 // This class does not need to be modified.
 UINTERFACE(MinimalAPI)
-class UI_Framework : public UInterface
+class UI_ClearZone : public UInterface
 {
 	GENERATED_BODY()
 };
@@ -16,17 +16,14 @@ class UI_Framework : public UInterface
 /**
  * 
  */
-class CODENAMEBRIKBRAK_API II_Framework
+class CODENAMEBRIKBRAK_API II_ClearZone
 {
 	GENERATED_BODY()
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
-
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void ScoreUpdate(int points);
+	void ClearZoneEntered();
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
-	void LivesUpdate(int lives);
 };

@@ -38,6 +38,13 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Ball)
 	void SpawnBall();
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void LoseLife();
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void UpdatePlayerLives();
+
+
 protected:
 	virtual void BeginPlay() override;
 

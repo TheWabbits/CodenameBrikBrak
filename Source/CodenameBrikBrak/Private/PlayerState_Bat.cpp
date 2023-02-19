@@ -3,3 +3,8 @@
 
 #include "PlayerState_Bat.h"
 
+APlayerState_Bat::APlayerState_Bat() :
+	PlayerLives(3)
+{
+
+}
