@@ -22,11 +22,18 @@ class CODENAMEBRIKBRAK_API II_Framework
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void StartGame();
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void ScoreUpdate(int points);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void LivesUpdate(int lives);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void UpdatePersistentData(int lives, int score);
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
+	void RetrievePersistentData(int& lives, int& score);
 };
